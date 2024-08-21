@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Médical 1 - Détails</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        nav {
+            background-color: #0077b6;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #90e0ef;
+        }
+        section {
+            padding: 60px;
+            text-align: center;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: calc(33% - 40px);
+            min-width: 300px;
+            text-align: left;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .card h3 {
+            color: #0077b6;
+            margin-top: 0;
+        }
+        .card p {
+            font-size: 1.1em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="../../index.html">Accueil</a>
+        <a href="../../projects.html">Projets</a>
+        <a href="../../contact.html">Coordonnées</a>
+    </nav>
+
+    <section>
+
+        <h2>Suite du développement d'application (SAE 3.01) - Détails</h2>
+        <div class="content">
+
+            <!-- Carte de texte 1 -->
+            <div class="card">
+                <h3>Introduction</h3>
+                <p>Cette SAE était un projet en groupe de 6 personnes ayant comme objectif de développer une application mobile, lié à une base de données via une API (créé lors de la première partie de la SAE)
+                    <br><br>
+                    Ayant été contacté par le FIMU, il nous a été demandé de développer une application mobile.
+                    <br>
+                    Cette application permettra aux festivaliers de consulter toutes les informations liées à un groupe ou un artiste présent lors du festival. Elle permettra aussi de consulter une carte interactive permettant de voir tous les stands disponibles durant l'événement ainsi que les scènes sur lesquelles se déroulent les concerts. Si un concert sur une scène et qu'on clique sur cette scène le nom du groupe en concert s'affiche et une clique dessus permet d'aller sur la page des détails de l'artiste. Enfin l'application permettra également de consulter le planning du festival.
+                    <br><br>
+                    Cette SAE permettra donc au festivalier de consulter toutes les informations liées au festival et aux groupes de musique y participant directement depuis leur téléphone.
+                </p>
+            </div>
+
+            <!-- Carte de texte 2 -->
+            <div class="card">
+                <h3>Travail personnel</h3>
+                <p>Durant cette SAE, les tâches ont été à nouveau réparties de manière à ce que tout le monde participe aux développement de l'application ainsi qu'à la création des maquettes. C'est pourquoi, mes actions lors de ce projet ont été :</p>
+                <ul>
+                    <li>Participation à la création des maquettes de l'application mobile.</li>
+                    <li>Participation à la mise a jour du trello.</li>
+                    <li>Liaison de l'API à l'application.</li>
+                    <li>Développement de plusieurs fragment Kotlin servant à la création des différentes page de l'application.</li>
+                </ul>
+            </div>
+
+            <!-- Carte de texte 3 -->
+            <div class="card">
+                <h3>Langages utilisés</h3>
+                <ul>
+                    <li>Kotlin</li>
+                </ul>
+            </div>
+
+            <!-- Carte de texte 4 -->
+            <div class="card">
+                <h3>Compétences</h3>
+                <p>
+                    <strong>Optimiser des applications en fonction de critères spécifiques :</strong> Ce projet m'a permis d'améliorer mes compétences en matière d'optimisation des performances et d'utilisation des ressources, ce qui nous a permis de garantir une expérience utilisatrice fluide et efficace.
+                    <br><br>
+                    <strong>Administrer des systèmes informatiques communicants complexes :</strong> J'ai eu l'occasion d'utiliser cette compétence grâce à l'implémentation de plusieurs fonctionnalités interactives telles que les boutons utilisés dans le détail des artistes qui nous permettent de consulter leurs réseaux sociaux ou encore de visionner l'une de leurs musiques sur YouTube. Cependant elles ont également été utilisées lors de la création de la carte interactive ou du planning.
+                    <br><br>
+                    <strong>Collaborer au sein d'une équipe informatique :</strong> J'ai pu utiliser cette compétence et la renforcer grâce aux interactions que nous avons eu au sein de l'équipe de développement afin de faire avancer au mieux le projet, mais également lorsqu'il fallait adapter les attributions des tâches en fonction des compétences et préférences de chacun.
+                </p>
+            </div>
+
+            <!-- Carte d'image -->
+            <div class="card">
+                <h3>Maquette de l'application</h3>
+                <img src="../../assets/images/MaquetteApplication.png" alt="Maquette de l'application">
+            </div>
+
+            <!-- Carte d'image -->
+            <div class="card">
+                <h3>Application mobile</h3>
+                <img src="../../assets/images/ApplicationMobile.png" alt="Application mobile">
+            </div>
+
+            <!-- Carte de texte 5 -->
+            <div class="card">
+                <h3>Piste d'optimisation</h3>
+                <p>
+                    <strong>Optimisation des performances :</strong> En fonction des actions faites par un utilisateur sur la page il sera utile d'ajouter des données dans le cash afin de ne pas en permanence interroger l'API et la base de données.
+                    <br><br>
+                    <strong>Modification visuelle :</strong> Le visuel de l'application est des plus basiques, c'est pourquoi il serait envisageable d'améliorer le visuel de l'application afin de la rendre plus belle.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>

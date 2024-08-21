@@ -1,0 +1,87 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+nav {
+    background-color: #0077b6;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #90e0ef;
+}
+
+section {
+    padding: 60px;
+    text-align: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 30px;
+    width: calc(33.333% - 40px); /* 3 cards per row with spacing */
+    box-sizing: border-box;
+    text-align: left;
+    transition: transform 0.3s;
+    display: inline-block; /* Allows multiple cards to fit in a row */
+    vertical-align: top; /* Aligns the cards properly in the row */
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card a {
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: bold;
+}
+
+.card h3 {
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+.card p {
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 40px); /* 2 cards per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: calc(100% - 40px); /* 1 card per row on very small screens */
+    }
+}
+

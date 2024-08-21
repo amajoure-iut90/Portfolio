@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordonnées - Portfolio Santé & Tech</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        nav {
+            background-color: #0077b6;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #90e0ef;
+        }
+        section {
+            padding: 60px;
+            text-align: center;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            padding: 30px;
+            width: 80%;
+            max-width: 1200px;
+            text-align: left;
+        }
+        .card h3 {
+            color: #0077b6;
+            margin-top: 0;
+        }
+        .card p {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #555;
+        }
+        .cv-button {
+            background-color: #0077b6;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 1.2em;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .cv-button:hover {
+            background-color: #0096c7;
+        }
+        .linkedin-link {
+            margin-top: 20px;
+            display: block;
+            color: #0077b6;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        .linkedin-link:hover {
+            color: #0096c7;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="projects.html">Projets</a>
+        <a href="contact.html">Coordonnées</a>
+    </nav>
+
+    <section>
+        <h2>Mes Coordonnées</h2>
+        <div class="card">
+            <h3>Nom : <span id="nom">SCHOTT</span></h3>
+            <h3>Prénom : <span id="prenom">Lilian</span></h3>
+            <p>Email : <span id="email">lilian.schott@edu.univ-fcomte.fr</span></p>
+            <p>Téléphone : <span id="telephone">+33 6 89 41 34 24</span></p>
+            
+            <!-- Lien vers LinkedIn -->
+            <a href="https://www.linkedin.com/in/lilian-schott/" target="_blank" class="linkedin-link">Visitez mon profil LinkedIn</a>
+            
+            <!-- Bouton pour télécharger le CV -->
+            <a href="assets/CV.pdf" target="_blank" class="cv-button">Télécharger mon CV</a>
+        </div>
+    </section>
+
+</body>
+</html>

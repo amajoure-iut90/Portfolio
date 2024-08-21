@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Médical 1 - Détails</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        nav {
+            background-color: #0077b6;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #90e0ef;
+        }
+        section {
+            padding: 60px;
+            text-align: center;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: calc(33% - 40px);
+            min-width: 300px;
+            text-align: left;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .card h3 {
+            color: #0077b6;
+            margin-top: 0;
+        }
+        .card p {
+            font-size: 1.1em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="../../index.html">Accueil</a>
+        <a href="../../projects.html">Projets</a>
+        <a href="../../contact.html">Coordonnées</a>
+    </nav>
+
+    <section>
+        <h2>Site de gestion de décharges (SAE 1.04) - Détails</h2>
+        <div class="content">
+
+            <!-- Carte de texte 1 -->
+            <div class="card">
+                <h3>Introduction</h3>
+                <p>
+                Cette SAE s'est déroulée avec un groupe de 3 personnes. Nous avons du créer un CRUD pour la gestion des décharges. Le but est de savoir quel camion doit livrer où en fonction de son type de déchets.
+                </p>
+            </div>
+
+            <!-- Carte de texte 2 -->
+            <div class="card">
+                <h3>Travail personnel</h3>
+                <p>Durant cette SAE, j'ai participé à la création du MCD afin d'en avoir un des plus complets possibles. Ce MCD a été fait grâce aux notes que j'ai prises lors d'une discussion avec le client. Puis je me suis occupé de toute la partie SQL, ainsi qu'une partie des Controllers. Enfin,je me suis occupé du CRUD pour la table "Dessert" qui regroupait plusieurs jointures.</p>
+            </div>
+
+            <!-- Carte de texte 3 -->
+            <div class="card">
+                <h3>Compétences</h3>
+                <p>Cette SAE m'a permis d'apprendre à créer une base de données en fonction des demandes du client (C5), mais également de développer une application web avec l'utilisation de Flask (C1). De plus étant donné mon niveau légèrement inférieur en HTML, cette SAE m'a grandement permis de m'améliorer dans ce domaine grâce à l'aide de mon groupe. </p>
+            </div>
+
+            <!-- Carte de texte 4 -->
+            <div class="card">
+                <h3>Retour sur la SAE</h3>
+                <p>De mon point de vue, cette SAE s'est très bien passée car nous avons pu la faire de manière efficace grâce à notre répartition dans les tâches à effectuer mais aussi de nous améliorer en s'aidant les un les autres grâce à cette efficacité. 
+                <br><br>Le point négatif que nous avons rencontré avec cette SAE a été le test du site qui ne fonctionnait pas au départ à cause d'une ligne de code qui a été mise en commentaire par erreur. 
+                </p>
+            </div>
+
+            <!-- Carte de téléchargement du rapport -->
+            <div class="card">
+                <h3>Télécharger le rapport</h3>
+                <a href="../../assets/rapports/RapportGestionDecharges.pdf" target="_blank">Cliquez ici pour télécharger le rapport.</a>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Médical 1 - Détails</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        nav {
+            background-color: #0077b6;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #90e0ef;
+        }
+        section {
+            padding: 60px;
+            text-align: center;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: calc(33% - 40px);
+            min-width: 300px;
+            text-align: left;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .card h3 {
+            color: #0077b6;
+            margin-top: 0;
+        }
+        .card p {
+            font-size: 1.1em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="../../index.html">Accueil</a>
+        <a href="../../projects.html">Projets</a>
+        <a href="../../contact.html">Coordonnées</a>
+    </nav>
+
+    <section>
+        <h2>Jeton manquant (SAE 1.01 - SAE 1.02) - Détails</h2>
+        <div class="content">
+            <!-- Carte d'image -->
+            <div class="card">
+                <img src="../../assets/images/imageJetonManquant.png" alt="Image d'une partie finie">
+            </div>
+
+            <!-- Carte de texte 1 -->
+            <div class="card">
+                <h3>Introduction</h3>
+                <p>
+                Cette SAE était un projet par groupe de 2 personnes ayant comme objectif le développement d’un jeu sur lequel 2 joueurs pourront s’affronter.
+                <br>Pour réaliser ce projet, nous avons utilisé le code source fournit au début de SAE, auquel nous avons implémenté les fonctions nécessaires à la création du jeu ainsi que celles dont nous avions besoin pour créer une partie et jouer, que ce soit avec un affichage dans un terminal ou via l’interface graphique.
+                <br><br>Pour la deuxième partie de la SAE, l'objectif était d'améliorer le jeu "jeton manquant" que nous avions développé lors d'une SAE antérieur. Il fallait notamment implémenter des IA pouvant jouer l'une contre l'autre ou contre un joueur réel. De plus, lors de cette SAE nous avons dû faire un rapport en anglais sur les IA et leur stratégie, en détaillant celle était la plus efficace.
+                <br>Pour trouver la stratégie que nous voulions implémenter nous avons perdu un peu de temps à faire des parties afin de trouver une stratégie plutôt forte et qui nous convenait.
+                </p>
+            </div>
+
+            <!-- Carte de texte 2 -->
+            <div class="card">
+                <h3>Travail personnel</h3>
+                <p>Dans cette SAE nous étions par 2 et nous avons donc dû nous répartir les tâches. Pour ma part, je me suis occupé de:  </p>
+                <ul>
+                    <li>L'implémentation de la fonction pour l'affichage dans le terminal qui était l'objectif du livrable de cette SAE.</li>
+                    <li>Réalisé les cas de tests pour montrer que le jeu fonctionnait correctement dans tous les cas pouvant se réaliser dans une partie.</li>
+                    <li>L'implémentation du "main" du jeu qui permet de gérer les parties.</li>
+                    <li>L'implémentation de l'IA la plus complète et complexe (mais elle n'est pas l'IA la plus optimal).</li>
+                    <li>La rédaction du rapport en anglais qui permet d'expliquer comment fonctionnent les IA.</li>
+                </ul>
+            </div>
+
+            <!-- Carte de texte 3 -->
+            <div class="card">
+                <h3>Compétences</h3>
+                <p>Ce projet m'a permis de développer plusieurs compétences :</p>
+                <ul>
+                    <li>Coder le jeu m'a permis de m’améliorer en programmation, car j'ai eu besoin de trouver des algorithmes adéquats à ce que je voulait faire. (C1)</li>
+                    <li>Le fait de documenter systématiquement mes programmes via la JavaDoc m'a permit de mieux comprendre les principes de la programmation et l’intérêt de documenter ses codes pour pour les autres. (C1)</li>
+                    <li>Implémenter l'IA la plus complexe m'a permis d'augmenter mes compétences en programmation car j'ai essayé de l'implémenter de sorte à ce qu'elle joue l'un des meilleurs coups possibles pour s'assurer la victoire.(C1)</li>
+                    <li>Implémenter l'IA la plus complexe m'a également permis de m'améliorer sur l'optimisation des algorithmes.(C2)</li>
+                    <li>Le fait d'avoir aider Maxime (mon duo) sur l'interface graphique m'a permis d'en apprendre plus sur la programmation événementiel </li>
+                    <li>Conduire un projet à deux m'a permis d'en apprendre plus sur la gestion de projet dans une équipe réduite. Cela m'a permis d'essayer de répartir de manière efficace le travail. (C6)</li>
+                </ul>
+            </div>
+
+            <!-- Carte de texte 4 -->
+            <div class="card">
+                <h3>Retour sur la SAE</h3>
+                <p>Dans sa globalité, je pense avoir plutôt bien réussi cette SAE, que ce soit avec la répartition des tâches qui nous a permis d'être très efficaces et donc de faire une interface graphique qui était en bonus, mais aussi dans l'aide que nous apportions l'un à l'autre quand nous rencontrions de petits problèmes.
+                    <br>Cependant avec l'avancer que nous avions sur ce projet, je suis un peu déçu de ne pas avoir réussi à implémenter le drag and drop dans l'interface graphique du jeu.
+                    <br><br>Après coup, je pense que la deuxième partie de la SAE c'est relativement bien passer, de par le fait que nous avons pu rendre tout le code que nous voulions (les 3 IA), même si à cause d'une gestion qui aurait pu être améliorée, je n'ai pas pu implémenter la fin de l'IA comme espérée, ce qui influence un peu son optimisation.
+                    <br>De plus, j'ai pu améliorer la manière dont j'expliquais les choses à l'écrit et en anglais.
+                </p>
+            </div>
+
+            <!-- Carte de téléchargement du rapport -->
+            <div class="card">
+                <h3>Télécharger le rapport</h3>
+                <a href="../../assets/rapports/RapportJetonManquant.pdf" target="_blank">Cliquez ici pour télécharger le rapport.</a>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

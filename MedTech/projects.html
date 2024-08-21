@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Portfolio Santé & Tech</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        nav {
+            background-color: #0077b6;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #90e0ef;
+        }
+        section {
+            padding: 60px;
+            text-align: center;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            padding: 30px;
+            width: 80%;
+            max-width: 1200px;
+            text-align: left;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .card h3 {
+            color: #0077b6;
+            margin-top: 0;
+        }
+        .card p {
+            font-size: 1.1em;
+            margin: 15px 0;
+            color: #555;
+        }
+        .card a {
+            text-decoration: none;
+            color: #0077b6;
+            font-weight: bold;
+        }
+        .card a:hover {
+            color: #0096c7;
+        }
+        button {
+            background-color: #0077b6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 20px 0;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #005f8a;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="projects.html">Projets</a>
+        <a href="contact.html">Coordonnées</a>
+    </nav>
+
+    <section>
+        <h2>Mes Projets</h2>
+
+        <!-- Bouton pour afficher/cacher les projets SAE 1 -->
+        <button onclick="toggleProjects('sae1', this)">Afficher les projets SAE 1</button>
+
+        <!-- Carte Projet SAE 1 -->
+        <div class="card sae1" style="display: none;">
+            <a href="projets/SAE1/JetonManquant.html">
+                <img src="assets/images/imageJetonManquant.png" alt="Projet 1">
+                <h3>Jeton manquant (SAE 1.01 - SAE 1.02)</h3>
+                <p>Technologies : Java</p>
+            </a>
+        </div>
+
+        <div class="card sae1" style="display: none;">
+            <a href="projets/SAE1/ArchitectureOrdinateur.html"></a>
+                <img src="assets/images/imageArchitecture.png" alt="Projet 2">
+                <h3>Architecture d'un ordinateur (SAE 1.03)</h3>
+                <p>Technologies : Bash</p>
+            </a>
+        </div>
+
+        <div class="card sae1" style="display: none;">
+            <a href="projets/SAE1/GestionDecharges.html">  
+                <img src="assets/images/imageGestionDecharge.png" alt="Projet 3">
+                <h3>Site de gestion de décharges (SAE 1.04)</h3>
+                <p>Technologies : SQL, Flask, HTML</p>
+            </a>
+        </div>
+
+        <div class="card sae1" style="display: none;">
+            <a href="projets/SAE1/GestionProjet.html">   
+                <img src="assets/images/imageGestionProjet.png" alt="Projet 4">
+                <h3>Gestion de projet (SAE 1.05)</h3>
+                <p>Technologies : Gantt, Pert</p>
+            </a>
+        </div>
+
+        <div class="card sae1" style="display: none;">
+            <a href="projets/SAE1/DossierEconomique.html">   
+                <img src="assets/images/imageDossierEconomique.png" alt="Projet 5">
+                <h3>Dossier Économique (SAE 1.06)</h3>
+                <p>Technologies : HTML, JavaScript</p>
+            </a>
+        </div>
+
+        <!-- Bouton pour afficher/cacher les projets SAE 2 -->
+        <button onclick="toggleProjects('sae2', this)">Afficher les projets SAE 2</button>
+
+        <!-- Carte Projet SAE 2 -->
+        <div class="card sae2" style="display: none;">
+            <a href="projets/SAE2/Backgammon.html">
+                <img src="assets/images/imageBackgammon.png" alt="Projet 6">
+                <h3>Backgammon (SAE 2.01 - SAE 2.02 - SAE 2.06)</h3>
+                <p>Technologies : Java, Framework Java (JavaFX)</p>
+            </a>
+        </div>
+
+        <div class="card sae2" style="display: none;">
+            <a href="projets/SAE2/Ecommerce.html">
+                <img src="assets/images/imageSiteECommerce.png" alt="Projet 7">
+                <h3>Site de e-commerce (SAE 2.03 - SAE 2.04 - SAE 2.05)</h3>
+                <p>Technologies : SQL, Flask</p>
+            </a>
+        </div>
+
+        <!-- Bouton pour afficher/cacher les projets SAE 3 -->
+        <button onclick="toggleProjects('sae3', this)">Afficher les projets SAE 3</button>
+
+        <!-- Carte Projet SAE 3 -->
+        <div class="card sae3" style="display: none;">
+            <a href="projets/SAE3/DeveloppementApplication.html">
+                <img src="assets/images/SiteWeb.png" alt="Projet 8">
+                <h3>Développement d'application (SAE 3.01)</h3>
+                <p>Technologies : VueJS, JavaScript, PostgreSQL, NodeJS</p>
+            </a>
+        </div>
+
+        <!-- Bouton pour afficher/cacher les projets SAE 4 -->
+        <button onclick="toggleProjects('sae4', this)">Afficher les projets SAE 4</button>
+
+        <div class="card sae4" style="display: none;">
+            <a href="projets/SAE4/Suite.html">
+                <img src="assets/images/imageApplication.png" alt="Projet 9">
+                <h3>Suite du développement d'application (SAE 3.01)</h3>
+                <p>Technologies : Kotlin</p>
+            </a>
+        </div>
+
+        <!-- Bouton pour afficher/cacher les projets SAE 5 -->
+        <button onclick="toggleProjects('sae5', this)">Afficher les projets SAE 5</button>
+
+        <div class="card sae5" style="display: none;">
+            <a href="projets/SAE5/index.html">
+                <img src="assets/images/MCD.png" alt="Projet 10">
+                <h3>Titre SAE (SAE 5.0)</h3>
+                <p>Technologies : </p>
+            </a>
+        </div>
+
+        <!-- Bouton pour afficher/cacher les projets SAE 6 -->
+        <button onclick="toggleProjects('sae6', this)">Afficher les projets SAE 6 (stage)</button>
+
+        <div class="card sae6" style="display: none;">
+            <a href="projets/stage/index.html">
+                <img src="assets/images/MCD.png" alt="Projet 10">
+                <h3>Titre SAE (SAE 5.0)</h3>
+                <p>Technologies : </p>
+            </a>
+        </div>
+
+
+    </section>
+
+    <script>
+        function toggleProjects(saeClass, button) {
+            const projects = document.querySelectorAll('.' + saeClass);
+
+            projects.forEach((project) => {
+                // Toggle visibility
+                if (project.style.display === 'none' || project.style.display === '') {
+                    project.style.display = 'block';
+                } else {
+                    project.style.display = 'none';
+                }
+            });
+
+            // Check if any project is visible
+            const isVisible = Array.from(projects).some(project => project.style.display === 'block');
+
+            // Mapping des classes SAE avec leurs noms complets
+            const saeNames = {
+                sae1: "SAE 1",
+                sae2: "SAE 2",
+                sae3: "SAE 3",
+                sae4: "SAE 4",
+                sae5: "SAE 5",
+                sae6: "SAE 6 (stage)" // Ajout de (stage) pour le bouton 6
+            };
+
+            // Modification du texte du bouton
+            if (isVisible) {
+                button.textContent = 'Masquer les projets ' + (saeNames[saeClass] || saeClass.toUpperCase());
+            } else {
+                button.textContent = 'Afficher les projets ' + (saeNames[saeClass] || saeClass.toUpperCase());
+            }
+        }
+    </script>
+
+</body>
+</html>

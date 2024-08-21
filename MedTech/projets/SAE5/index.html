@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Médical 1 - Détails</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        nav {
+            background-color: #0077b6;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #90e0ef;
+        }
+        section {
+            padding: 60px;
+            text-align: center;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: calc(33% - 40px);
+            min-width: 300px;
+            text-align: left;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .card h3 {
+            color: #0077b6;
+            margin-top: 0;
+        }
+        .card p {
+            font-size: 1.1em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="../../index.html">Accueil</a>
+        <a href="../../projects.html">Projets</a>
+        <a href="../../contact.html">Coordonnées</a>
+    </nav>
+
+    <section>
+
+        <h2>Titre SAE (SAE 5.0) - Détails</h2>
+        <div class="content">
+
+            <!-- Carte de texte 1 -->
+            <div class="card">
+                <h3>Introduction</h3>
+                <p>
+                    Cette SAE était un projet en groupe de 5 personnes ayant comme objectif de reprendre le développement et créer une application complexe, permettant la surveillance de la qualité d’aire d’une salle de classe afin de proposer le meilleur environnement de travail possible à chaque étudiant.
+                    <br><br>Pour ce projet, nous avons utilisé des codes sources existants pour démarrer et avons ajouté une connexion à une base de données que nous avons créée. Nous avons implémenté divers capteurs (luminosité, CO2, température) reliés à un Arduino et centralisés sur un serveur. Nous avons également développé une application mobile en Quasar pour compter les personnes dans une salle via des photos et envoyer des alertes. L’objectif est d'améliorer l'analyse en comparant les données des capteurs avec celles des photos. Enfin, un site web en Vue.js permet de visualiser les données en temps réel.
+                </p>
+            </div>
+
+            <!-- Carte d'image -->
+            <!--<div class="card">
+                <h3>Trello</h3>
+                <img src="../../assets/images/Trello.png" alt="Trello">
+            </div>-->
+
+            <!-- Carte de texte 2 -->
+            <div class="card">
+                <h3>Travail personnel</h3>
+                <p>Dans ce projet, nous nous sommes répartie le travail en fonction des différents modules à implémenté, c’est pourquoi je me suis occupé de :</p>
+                <ul>
+                    <li>L’implémentation et la création de l’application mobile Quasar permettant l’envoie des photos</li>
+                    <li>L’implémentation du serveurs d’analyser qui permet de récupérer l’image puis de renvoyer le nombre de personnes présentes sur l’image grâce à l’utilisation d’un modèle d’intelligence artificielle nommé « MTCNN »</li>
+                    <li>Création des connexions afin de faire l’envoie des données entre l’application et le serveurs d’analyse ainsi qu’entre le serveur d’analyse et le serveur de centralisation de données.</li>
+                </ul>
+            </div>
+
+            <!-- Carte de texte 3 -->
+            <div class="card">
+                <h3>Langages utilisés</h3>
+                <ul>
+                    <li>Quasar</li>
+                    <li>VueJS</li>
+                    <li>Arduino</li>
+                </ul>
+            </div>
+
+            <!-- Carte d'image -->
+            <div class="card">
+                <h3>Architecture logicielle</h3>
+                <img src="../../assets/images/imageSAE5.png" alt="Architecture logicielle">
+            </div>
+
+            <!-- Carte d'image -->
+            <!--<div class="card">
+                <h3>Site Web</h3>
+                <img src="../../assets/images/SiteWeb.png" alt="Site Web">
+            </div>-->
+
+            <!-- Carte d'image -->
+            <!--<div class="card">
+                <h3>MCD</h3>
+                <img src="../../assets/images/MCD.png" alt="MCD">
+            </div>-->
+
+            <!-- Carte de texte 4 -->
+            <div class="card">
+                <h3>Compétences</h3>
+                <p>
+                    <strong>Réaliser un développement d'application </strong> Grâce à ce projet, j'ai renforcé mes compétences en développement d'applications en créant une application mobile avec Quasar. J'ai conçu l'interface utilisateur et implémenté la fonctionnalité d'envoi de photos vers un serveur d'analyse. Cela m'a permis de consolider mes connaissances sur les interactions entre une application front-end et des serveurs back-end.
+                    <br><br>
+                    <strong>Optimiser des applications :</strong> J'ai amélioré mes compétences en optimisation d'applications en veillant à ce que les échanges de données entre l'application mobile, le serveur d'analyse et le serveur de centralisation soient fluides et efficaces. J'ai également optimisé le traitement des images via l'intelligence artificielle (MTCNN) pour garantir des réponses rapides et précises.
+                    <br><br>
+                    <strong>Collaborer au sein d'une équipe informatique :</strong> La répartition des tâches au sein de l'équipe m'a permis de collaborer efficacement, en particulier lors de l'intégration des différents modules. J'ai appris à synchroniser mon travail avec mes coéquipiers, à assurer la communication entre les différentes parties du projet, et à résoudre rapidement les problèmes techniques.
+                </p>
+            </div>
+
+            <!-- Carte de texte 5 -->
+            <div class="card">
+                <h3>Retour sur la SAE</h3>
+                <p>
+                    Lorem ipsum
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
